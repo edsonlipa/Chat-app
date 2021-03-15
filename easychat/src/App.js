@@ -11,11 +11,9 @@ function App() {
   const [user] = useAuthState(auth);
   return (
     <div className="App">
-      <header className="App-header">
       <section>
         {user?<ChatRoom/>:<SignIn/>}
       </section>
-      </header>
       
     </div>
   );
