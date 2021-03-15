@@ -4,6 +4,7 @@ import 'firebase/auth'
 
 import {useAuthState} from 'react-firebase-hooks/auth'
 import  {useCollectionData} from 'react-firebase-hooks/firestore'
+import { auth } from '../apis/firebaseconf'
 
 
 
@@ -13,7 +14,7 @@ function SignIn() {
     auth.signInWithPopup(provider);
   }
     return (
-    <button>
+    <button onClick={signInWithGoogle}>
         Sign in with Google
     </button>
   );

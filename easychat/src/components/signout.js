@@ -1,6 +1,8 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import {auth} from '../apis/firebaseconf.js';
+
 
 import {useAuthState} from 'react-firebase-hooks/auth'
 import  {useCollectionData} from 'react-firebase-hooks/firestore'
