@@ -11,7 +11,7 @@ function App() {
   const [user] = useAuthState(auth);
   return (
     <div className="App">
-      <header><SignOut/></header>
+      <header>{user?<SignOut/>:<h2>Hello to his chat room by Edson =)</h2>}</header>
       <section>
         {user?<ChatRoom/>:<SignIn/>}
       </section>
