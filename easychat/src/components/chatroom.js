@@ -40,7 +40,7 @@ function ChatRoom() {
       
       <form onSubmit={sendMessage}>
         <input value={formValue} onChange={(e)=>setFormValue(e.target.value)}/>
-        <button type='submit'>send nudes</button>
+        <button type='submit'>send message</button>
       </form>
       
     </>
