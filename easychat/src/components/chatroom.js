@@ -31,9 +31,7 @@ function ChatRoom() {
   }
   return (
     <>
-    <SignOut/>
       <main>
-        
         {messages && messages.map(msg=><ChatMessage key={msg.id} message={msg} />)}
         <div ref={dummy}></div>
       </main>

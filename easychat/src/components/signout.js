@@ -5,10 +5,12 @@ import {auth} from '../apis/firebaseconf.js';
 
 function SignOut() {
   
-    return auth.currentUser && (
+    return auth.currentUser && (<>
+    <h2>Hello {auth.currentUser.displayName}</h2>
     <button onClick={()=>auth.signOut()}>
-        Sign Out
+        Sign Out 
     </button>
+    </>
   );
 }
 
